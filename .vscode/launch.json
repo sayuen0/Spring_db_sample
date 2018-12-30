@@ -4,6 +4,13 @@
       "type": "java",
       "name": "CodeLens (Launch) - DemoApplication",
       "request": "launch",
+      "mainClass": "hello.DemoApplication",
+      "projectName": "dbsample"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoApplication",
+      "request": "launch",
       "mainClass": "com.example.dbsample.DemoApplication",
       "projectName": "dbsample"
     }
