@@ -19,6 +19,24 @@
       [[${entry.key}]],[[${entry.value}]]
     </li>
   </ul>
+
+  <!-- th:each="【各要素】, 【ステータス変数】 : 【繰り返す対象】" -->
+  <ul>
+    <li th:each="element, status : ${list}">
+      index = [[${status.index}]],
+      count = [[${status.count}]],
+      size = [[${status.size}]],
+      current = [[${status.current}]],
+      even = [[${status.even}]],
+      odd = [[${status.odd}]],
+      first = [[${status.first}]],
+      last = [[${status.last}]]
+    </li>
+  </ul>
+  <!-- th:blockで繰り返しを指定 -->
+  <th:block th:each="element : ${list}">
+    <h2>[[${element}]]</h2>
+  </th:block>
 </body>
 
 </html>
