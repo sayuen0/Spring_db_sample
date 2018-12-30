@@ -13,6 +13,13 @@
   <div th:text="${hoge.publicMethod()}"></div>
   <div th:text="${hoge.publicValue}"></div>
   <div th:text="${hoge['publicValue']}"></div>
+
+
+  <!-- message sourceを使う -->
+  <h1 th:text="#{foo.message}"></h1>
+  <h1 th:text="#{bar.message}"></h1>
+  <!-- メッセージにプレースホルダがあったら、キー名（パラメータ） -->
+  <h1 th:text="#{baz.message('from hello.html')}"></h1>
 </body>
 
 </html>
