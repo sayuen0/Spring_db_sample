@@ -17,6 +17,19 @@ public class HelloController {
     return "hello";
   }
 
+  // 内部クラス
+  public static class Hoge {
+    public int publicField = 1;
+
+    public int publicMethod() {
+      return 2;
+    }
+
+    public int getPublicValue() {
+      return 3;
+    }
+  }
+
   @GetMapping("/greet")
   public String greet(Model model) {
     Greeting greet = new Greeting(1, "Hello thymeleaf!!");
@@ -47,15 +60,4 @@ public class HelloController {
 
   }
 
-  public static class Hoge {
-    public int publicField = 1;
-
-    public int publicMethod() {
-      return 2;
-    }
-
-    public int getPublicValue() {
-      return 3;
-    }
-  }
 }

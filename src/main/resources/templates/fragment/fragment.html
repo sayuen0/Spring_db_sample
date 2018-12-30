@@ -1,0 +1,17 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Fragment</title>
+</head>
+
+<body>
+
+  <!-- th:insert で、 【テンプレート名】 :: 【埋め込むフラグメント名】 -->
+  <h1>Hello Fragment</h1>
+  <div id="foo" th:insert="fragment/embedded :: fuga"></div>
+  <div th:insert="fragment/embedded :: hoge"></div>
+</body>
+
+</html>
